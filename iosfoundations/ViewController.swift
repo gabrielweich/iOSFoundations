@@ -15,26 +15,25 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
     }
 
     @IBAction func onAcessorios(_ sender: Any) {
-        category = "acessorios"
+        category = "Acessórios"
         performSegue(withIdentifier: "golist", sender: self)
     }
     
     @IBAction func onVestuario(_ sender: Any) {
-        category = "vestuario"
+        category = "Vestuário"
         performSegue(withIdentifier: "golist", sender: self)
     }
     
     @IBAction func onAlimentacao(_ sender: Any) {
-        category = "alimentacao"
+        category = "Alimentação"
         performSegue(withIdentifier: "golist", sender: self)
     }
     
     @IBAction func onDestaques(_ sender: Any) {
-        category = "destaques"
+        category = "Destaques"
         performSegue(withIdentifier: "golist", sender: self)
     }
     
@@ -47,4 +46,3 @@ class ViewController: UIViewController {
     }
     
 }
-

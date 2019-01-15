@@ -14,6 +14,7 @@
 		C04BDB5A21EE521A003B244D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C04BDB5821EE521A003B244D /* LaunchScreen.storyboard */; };
 		C04BDB6221EE56A0003B244D /* BusinessItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BDB6121EE56A0003B244D /* BusinessItem.swift */; };
 		C04BDB6421EE5848003B244D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BDB6321EE5848003B244D /* ListViewController.swift */; };
+		C04BDB6621EE5FCF003B244D /* BusinessItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BDB6521EE5FCF003B244D /* BusinessItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C04BDB5B21EE521A003B244D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C04BDB6121EE56A0003B244D /* BusinessItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessItem.swift; sourceTree = "<group>"; };
 		C04BDB6321EE5848003B244D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		C04BDB6521EE5FCF003B244D /* BusinessItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessItemTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				C04BDB4F21EE5219003B244D /* AppDelegate.swift */,
 				C04BDB5121EE5219003B244D /* ViewController.swift */,
+				C04BDB6521EE5FCF003B244D /* BusinessItemTableViewCell.swift */,
 				C04BDB5321EE5219003B244D /* Main.storyboard */,
 				C04BDB6321EE5848003B244D /* ListViewController.swift */,
 				C04BDB5621EE521A003B244D /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 				C04BDB5221EE5219003B244D /* ViewController.swift in Sources */,
 				C04BDB5021EE5219003B244D /* AppDelegate.swift in Sources */,
 				C04BDB6421EE5848003B244D /* ListViewController.swift in Sources */,
+				C04BDB6621EE5FCF003B244D /* BusinessItemTableViewCell.swift in Sources */,
 				C04BDB6221EE56A0003B244D /* BusinessItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

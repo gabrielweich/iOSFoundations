@@ -12,11 +12,14 @@ class ListViewController: UIViewController {
     
     var category:String=""
     
+    @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var titleOut: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         titleOut.title = category
+        tableView.dataSource = self
+        tableView.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -31,4 +34,20 @@ class ListViewController: UIViewController {
     }
     */
 
+}
+
+
+extension ListViewController: UITableViewDataSource, UITableViewDelegate{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell:BusinessItemTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as! BusinessItemTableViewCell
+        
+        cell.title.text="gesiel"
+        return cell
+    }
+    
+    
 }
