@@ -107,8 +107,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c6I-TS-88h">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c6I-TS-88h">
                                 <rect key="frame" x="20" y="108" width="335" height="446"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="uh2-zp-0us" customClass="BusinessItemTableViewCell" customModule="iosfoundations" customModuleProvider="target">
@@ -135,11 +136,6 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="c6I-TS-88h" firstAttribute="leading" secondItem="eok-tG-t8l" secondAttribute="leading" constant="20" id="4iT-Y7-l3W"/>
-                            <constraint firstItem="eok-tG-t8l" firstAttribute="trailing" secondItem="c6I-TS-88h" secondAttribute="trailing" constant="20" id="9wh-o6-YGX"/>
-                            <constraint firstItem="c6I-TS-88h" firstAttribute="top" secondItem="eok-tG-t8l" secondAttribute="top" constant="20" id="QAN-Ti-QkH"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eok-tG-t8l"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="d7z-8F-avT"/>
