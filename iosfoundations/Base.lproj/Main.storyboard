@@ -53,10 +53,35 @@
                     <view key="view" contentMode="scaleToFill" id="Cn4-Vr-IMr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qE0-Kz-34Y">
+                                <rect key="frame" x="92" y="249" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Object"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afx-p6-Rit">
+                                <rect key="frame" x="208" y="249" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Clothing"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BC6-0F-u3L">
+                                <rect key="frame" x="98" y="348" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Food"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zz3-fr-r4d">
+                                <rect key="frame" x="193" y="348" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Most Viewed"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="E8e-y0-K2d"/>
                     </view>
                     <navigationItem key="navigationItem" id="8Hj-hJ-U8j"/>
+                    <connections>
+                        <segue destination="Z3n-ks-stt" kind="show" id="b62-5t-fC6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xHz-Od-JN2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -112,11 +137,11 @@
             </objects>
             <point key="canvasLocation" x="2056.8000000000002" y="1270.6146926536733"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="aye-Tz-FId">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j98-8y-J0l" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="HFE-em-8MA"/>
+                    <tabBarItem key="tabBarItem" title="" id="HFE-em-8MA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="izQ-8c-P5L">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
