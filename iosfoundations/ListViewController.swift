@@ -9,10 +9,14 @@
 import UIKit
 
 class ListViewController: UIViewController {
-
+    
+    var category:String=""
+    
+    
+    @IBOutlet weak var titleOut: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        titleOut.title = category
         // Do any additional setup after loading the view.
     }
     
