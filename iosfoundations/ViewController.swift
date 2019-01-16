@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var category:String=""
+    var category:Category = Category(key:"", value:"")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,22 +18,22 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onAcessorios(_ sender: Any) {
-        category = "Acessórios"
+        category = Category(key: "acessories", value: "Acessórios")
         performSegue(withIdentifier: "golist", sender: self)
     }
     
     @IBAction func onVestuario(_ sender: Any) {
-        category = "Vestuário"
+        category = Category(key: "wearing", value: "Vestuário")
         performSegue(withIdentifier: "golist", sender: self)
     }
     
     @IBAction func onAlimentacao(_ sender: Any) {
-        category = "Alimentação"
+        category = Category(key: "food", value: "Alimentação")
         performSegue(withIdentifier: "golist", sender: self)
     }
     
     @IBAction func onDestaques(_ sender: Any) {
-        category = "Destaques"
+        category = Category(key: "highlights", value: "Destaques")
         performSegue(withIdentifier: "golist", sender: self)
     }
     

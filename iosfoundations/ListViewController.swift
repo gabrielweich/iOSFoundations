@@ -10,14 +10,20 @@ import UIKit
 
 class ListViewController: UIViewController {
     
-    var category:String=""
+    var category:Category=Category(key:"", value:"")
+    var businessList:[String:[BusinessItem]] = [
+        "acessories":[BusinessItem(title: "agesiel", description:"dessad", favorited:false)],
+        "food":[BusinessItem(title: "fgesiel", description:"dessad", favorited:false)],
+        "wearing":[BusinessItem(title: "wgesiel", description:"dessad", favorited:false)],
+        "highlights":[BusinessItem(title: "hgesiel", description:"dessad", favorited:false)]
+    ]
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var titleOut: UINavigationItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleOut.title = category
+        titleOut.title = category.value
         tableView.dataSource = self
         tableView.delegate = self
         // Do any additional setup after loading the view.
@@ -42,26 +48,17 @@ class ListViewController: UIViewController {
 
 extension ListViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return businessList[category.key]?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:BusinessItemTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as! BusinessItemTableViewCell
         
-        cell.title?.text=category
+        cell.title?.text=businessList[category.key]?[indexPath.row].title
         return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
-        
-        tableView.deselectRow(indexPath, animated: true)
-        
-        let row = indexPath.row
-        print("Row: \(row)")
-        
-        print(meetingArray[row] as! String)
-        
-    }
+
     
     
 }

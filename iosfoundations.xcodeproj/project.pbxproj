@@ -18,6 +18,7 @@
 		C04BDB6221EE56A0003B244D /* BusinessItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BDB6121EE56A0003B244D /* BusinessItem.swift */; };
 		C04BDB6421EE5848003B244D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BDB6321EE5848003B244D /* ListViewController.swift */; };
 		C04BDB6621EE5FCF003B244D /* BusinessItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BDB6521EE5FCF003B244D /* BusinessItemTableViewCell.swift */; };
+		C04BDB6A21EF9FF5003B244D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BDB6921EF9FF5003B244D /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		C04BDB6121EE56A0003B244D /* BusinessItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessItem.swift; sourceTree = "<group>"; };
 		C04BDB6321EE5848003B244D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		C04BDB6521EE5FCF003B244D /* BusinessItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessItemTableViewCell.swift; sourceTree = "<group>"; };
+		C04BDB6921EF9FF5003B244D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				C04BDB5821EE521A003B244D /* LaunchScreen.storyboard */,
 				C04BDB5B21EE521A003B244D /* Info.plist */,
 				C04BDB6121EE56A0003B244D /* BusinessItem.swift */,
+				C04BDB6921EF9FF5003B244D /* Category.swift */,
 			);
 			path = iosfoundations;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				BE74195A21EE6D89009D0C1C /* FavoriteTableViewCell.swift in Sources */,
 				BE545DFE21EF9E8A000D3F4A /* ProfileViewController.swift in Sources */,
 				C04BDB6221EE56A0003B244D /* BusinessItem.swift in Sources */,
+				C04BDB6A21EF9FF5003B244D /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
