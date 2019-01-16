@@ -237,7 +237,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.99215686274509807" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="E8e-y0-K2d"/>
                     </view>
                     <navigationItem key="navigationItem" title="Categories" id="8Hj-hJ-U8j"/>
