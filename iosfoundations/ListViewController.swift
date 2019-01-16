@@ -52,16 +52,7 @@ extension ListViewController: UITableViewDataSource, UITableViewDelegate{
         return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
-        
-        tableView.deselectRow(indexPath, animated: true)
-        
-        let row = indexPath.row
-        print("Row: \(row)")
-        
-        print(meetingArray[row] as! String)
-        
-    }
+
     
     
 }
