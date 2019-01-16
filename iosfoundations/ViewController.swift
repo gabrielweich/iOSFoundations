@@ -18,25 +18,27 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onAcessorios(_ sender: Any) {
-        category = Category(key: "acessories", value: "Acessórios")
+        category = Category(key: "acessories", value: "Objects")
         performSegue(withIdentifier: "golist", sender: self)
     }
     
+    
     @IBAction func onVestuario(_ sender: Any) {
-        category = Category(key: "wearing", value: "Vestuário")
+        category = Category(key: "wearing", value: "Clothes")
         performSegue(withIdentifier: "golist", sender: self)
     }
     
     @IBAction func onAlimentacao(_ sender: Any) {
-        category = Category(key: "food", value: "Alimentação")
+        category = Category(key: "food", value: "Food")
         performSegue(withIdentifier: "golist", sender: self)
     }
     
     @IBAction func onDestaques(_ sender: Any) {
-        category = Category(key: "highlights", value: "Destaques")
+        category = Category(key: "highlights", value: "Highlights")
         performSegue(withIdentifier: "golist", sender: self)
+        
     }
-    
+        
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "golist"{
             var vc = segue.destination as! ListViewController
