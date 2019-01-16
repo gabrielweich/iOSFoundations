@@ -35,13 +35,14 @@ class FavoritesViewController: UIViewController {
 }
 
 extension FavoritesViewController: UITableViewDataSource, UITableViewDelegate{
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell:FavoriteTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as!FavoriteTableViewCell
+        let cell:FavoriteTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as! FavoriteTableViewCell
 
         return cell
     }
