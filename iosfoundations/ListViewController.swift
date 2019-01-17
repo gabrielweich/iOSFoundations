@@ -20,8 +20,6 @@ class ListViewController: UIViewController{
 
     var businessList:[BusinessItem]=[]
     
-    let word = ["AAAAAA","BBBBB","CCCCC","DDDDDD","EEEEEE","FFFFFFFF"]
-    let titulo = ["Lugar_1","Lugar_2","Lugar_3","Lugar_4","Lugar_5","Lugar_6"]
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var titleOut: UINavigationItem!
@@ -64,9 +62,9 @@ extension ListViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:BusinessItemTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as! BusinessItemTableViewCell
-        
-        cell.title?.text=businessList[indexPath.row].title
+        let cell:TableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! TableViewCell
+       
+        cell.commonInit("img_\(indexPath.item)", title: "gesiel", sub: "gabriel")
         return cell
     }
     
