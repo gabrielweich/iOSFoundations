@@ -13,4 +13,5 @@ struct BusinessItem {
     let title: String
     let description: String
     var favorited: Bool
+    let image: String
 }

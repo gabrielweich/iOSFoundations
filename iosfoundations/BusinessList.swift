@@ -10,10 +10,18 @@ import Foundation
 
 class BusinessList{
     static var businessList:[String:[BusinessItem]] = [
-        "acessories":[BusinessItem(title: "agesiel", description:"dessad", favorited:false)],
-        "food":[BusinessItem(title: "fgesiel", description:"dessad", favorited:false)],
-        "wearing":[BusinessItem(title: "wgesiel", description:"dessad", favorited:false)],
-        "highlights":[BusinessItem(title: "hgesiel", description:"dessad", favorited:false)]
+        "acessories":[
+            BusinessItem(title: "agesiel", description:"dessad", favorited: false, image: "img_0")
+        ],
+        "food":[
+            BusinessItem(title: "fgesiel", description:"dessad", favorited: false, image: "img_1")
+        ],
+        "wearing":[
+            BusinessItem(title: "wgesiel", description:"dessad", favorited: false, image: "img_2")
+        ],
+        "highlights":[
+            BusinessItem(title: "hgesiel", description:"dessad", favorited: false, image: "img_3")
+        ]
     ]
     
     static func getList(category:String) -> [BusinessItem]?{

@@ -64,7 +64,8 @@ extension ListViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:TableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! TableViewCell
        
-        cell.commonInit("img_\(indexPath.item)", title: "gesiel", sub: "gabriel")
+        cell.commonInit(businessList[indexPath.row].image
+            , title: businessList[indexPath.row].title, sub: businessList[indexPath.row].description)
         return cell
     }
     
