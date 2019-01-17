@@ -2,11 +2,15 @@
   "images" : [
     {
       "idiom" : "universal",
+<<<<<<< HEAD:iosfoundations/Assets.xcassets/icons/loja_img_0.imageset/Contents.json
       "filename" : "loja_img_0.jpg",
+=======
+>>>>>>> bfc6561edaf0ae8e2a3e305958a522e902cf01f7:iosfoundations/Assets.xcassets/icon/img_0.imageset/Contents.json
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "img_0.jpg",
       "scale" : "2x"
     },
     {

@@ -48,7 +48,6 @@ extension FavoritesViewController: UITableViewDataSource, UITableViewDelegate{
         
         let cell:TableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! TableViewCell
         
-
         return cell
     }
     

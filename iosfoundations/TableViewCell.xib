@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -34,6 +33,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+<<<<<<< HEAD
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URg-CI-eAT">
                         <rect key="frame" x="103" y="44" width="144" height="77"/>
                         <attributedString key="attributedText">
@@ -50,10 +50,36 @@
                         <rect key="frame" x="265" y="16" width="42" height="98"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="42" id="8zr-mv-TSO"/>
+=======
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URg-CI-eAT">
+                        <rect key="frame" x="103" y="39" width="37.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="It6-Um-yNk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <color key="textColor" white="0.44613389530000003" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favorites" translatesAutoresizingMaskIntoConstraints="NO" id="mTv-F6-0pA">
+                        <rect key="frame" x="250" y="10" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="MvH-KK-aPj"/>
+                            <constraint firstAttribute="width" constant="50" id="SNr-uh-yl0"/>
+>>>>>>> bfc6561edaf0ae8e2a3e305958a522e902cf01f7
                         </constraints>
                     </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4x-sp-oi4">
+                        <rect key="frame" x="240" y="8" width="72" height="53.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="72" id="RAU-l0-OLL"/>
+                        </constraints>
+                        <connections>
+                            <action selector="onFavorite:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="96p-X8-Iew"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
+<<<<<<< HEAD
                     <constraint firstItem="ZvF-61-aAA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="2A3-mo-SX2"/>
                     <constraint firstItem="eF8-iP-2vn" firstAttribute="leading" secondItem="URg-CI-eAT" secondAttribute="leading" id="6Sh-HB-h8U"/>
                     <constraint firstItem="mTv-F6-0pA" firstAttribute="leading" secondItem="URg-CI-eAT" secondAttribute="trailing" constant="18" id="9Gs-fM-AMe"/>
@@ -66,11 +92,26 @@
                     <constraint firstItem="ZvF-61-aAA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="yOi-18-kZQ"/>
                     <constraint firstItem="mTv-F6-0pA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="ynu-UM-7jl"/>
                     <constraint firstAttribute="bottomMargin" secondItem="ZvF-61-aAA" secondAttribute="bottom" constant="9" id="zWA-Hp-8X5"/>
+=======
+                    <constraint firstItem="URg-CI-eAT" firstAttribute="top" secondItem="eF8-iP-2vn" secondAttribute="bottom" constant="3" id="7aj-Bm-OHw"/>
+                    <constraint firstAttribute="trailing" secondItem="m4x-sp-oi4" secondAttribute="trailing" constant="8" id="Df6-72-e5d"/>
+                    <constraint firstItem="eF8-iP-2vn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="ELR-FY-cI3"/>
+                    <constraint firstItem="mTv-F6-0pA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="EdD-Zk-1Vj"/>
+                    <constraint firstItem="ZvF-61-aAA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Hjy-qy-asj"/>
+                    <constraint firstAttribute="trailing" secondItem="mTv-F6-0pA" secondAttribute="trailing" constant="20" id="OYa-iE-Txg"/>
+                    <constraint firstItem="m4x-sp-oi4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="QXh-Hz-WY8"/>
+                    <constraint firstItem="ZvF-61-aAA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="YqP-Xp-y58"/>
+                    <constraint firstItem="eF8-iP-2vn" firstAttribute="leading" secondItem="ZvF-61-aAA" secondAttribute="trailing" constant="11" id="eOR-Fj-IdD"/>
+                    <constraint firstAttribute="bottom" secondItem="m4x-sp-oi4" secondAttribute="bottom" constant="8" id="ll0-af-oTF"/>
+                    <constraint firstItem="URg-CI-eAT" firstAttribute="leading" secondItem="ZvF-61-aAA" secondAttribute="trailing" constant="14" id="nJ3-iQ-sWe"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ZvF-61-aAA" secondAttribute="bottom" constant="9" id="zka-Fb-lfN"/>
+>>>>>>> bfc6561edaf0ae8e2a3e305958a522e902cf01f7
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="favoritando" destination="mTv-F6-0pA" id="LDF-2w-vTL"/>
+                <outlet property="favoriteImage" destination="mTv-F6-0pA" id="68Z-oH-u36"/>
                 <outlet property="logoimage" destination="ZvF-61-aAA" id="YU7-QU-Ec5"/>
                 <outlet property="subLabel" destination="URg-CI-eAT" id="fhD-AD-QhM"/>
                 <outlet property="titleLabel" destination="eF8-iP-2vn" id="2rQ-pP-hy7"/>
@@ -79,6 +120,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="star" width="43.065422058105469" height="43.065422058105469"/>
+        <image name="favorites" width="33.75" height="33.75"/>
     </resources>
 </document>

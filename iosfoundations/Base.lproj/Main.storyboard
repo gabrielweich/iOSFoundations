@@ -388,54 +388,94 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="K4r-FA-sSB">
-                                <rect key="frame" x="16" y="134" width="343" height="444"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PratoVerde" translatesAutoresizingMaskIntoConstraints="NO" id="hZW-b0-9LR">
-                                        <rect key="frame" x="121.5" y="0.0" width="100" height="100"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="OMh-lb-uTJ"/>
-                                            <constraint firstAttribute="height" constant="100" id="piw-u3-JtT"/>
-                                        </constraints>
-                                    </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZMj-1w-SDQ">
-                                        <rect key="frame" x="0.0" y="130" width="343" height="184"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">Endereço: Rua Santa Teresinha, 42 - Bom Fim, Porto Alegre - RS, 90040-180   Telefone: (51) 3388-6659
-
-Site: www.pratoverde.com.br</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
-                                    </textView>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TDK-9K-rTf">
-                                        <rect key="frame" x="52" y="344" width="239" height="100"/>
-                                        <color key="backgroundColor" red="0.53270182219999995" green="0.69851732850000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </mapView>
-                                </subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4e3-gs-rBg">
+                                <rect key="frame" x="137.5" y="84" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="ZMj-1w-SDQ" secondAttribute="trailing" id="Kec-fA-m7g"/>
-                                    <constraint firstItem="ZMj-1w-SDQ" firstAttribute="centerY" secondItem="K4r-FA-sSB" secondAttribute="centerY" id="Ul9-UC-afH"/>
-                                    <constraint firstItem="ZMj-1w-SDQ" firstAttribute="leading" secondItem="K4r-FA-sSB" secondAttribute="leading" id="iWp-h6-Fg8"/>
+                                    <constraint firstAttribute="height" constant="100" id="IoK-ET-DA5"/>
+                                    <constraint firstAttribute="width" constant="100" id="PRh-LZ-QLt"/>
                                 </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Dyh-gv-VO3">
+                                <rect key="frame" x="20" y="204" width="335" height="74"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0kA-sl-rdm">
+                                        <rect key="frame" x="0.0" y="0.0" width="129.5" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Endereço:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSJ-lR-dTf">
+                                                <rect key="frame" x="0.0" y="0.0" width="77.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPg-YK-zeP">
+                                                <rect key="frame" x="87.5" y="0.0" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="pZV-9P-pKf">
+                                        <rect key="frame" x="0.0" y="28.5" width="129" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Site:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNV-Jb-oAr">
+                                                <rect key="frame" x="0.0" y="0.0" width="34" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kwk-i7-RNn">
+                                                <rect key="frame" x="87" y="0.0" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="L26-YJ-fuY">
+                                        <rect key="frame" x="0.0" y="57" width="129" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Telefone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tN6-yJ-Xfv">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKk-7o-kVa">
+                                                <rect key="frame" x="87" y="0.0" width="42" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sdi-23-obe">
+                                <rect key="frame" x="20" y="298" width="335" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="utk-Kd-a9z"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Tq8-1M-fNI" firstAttribute="trailing" secondItem="K4r-FA-sSB" secondAttribute="trailing" constant="16" id="8Lj-6E-Azq"/>
-                            <constraint firstItem="K4r-FA-sSB" firstAttribute="top" secondItem="Tq8-1M-fNI" secondAttribute="top" constant="70" id="JCD-Sr-zBV"/>
-                            <constraint firstItem="Tq8-1M-fNI" firstAttribute="bottom" secondItem="K4r-FA-sSB" secondAttribute="bottom" constant="40" id="MuX-Il-Ddy"/>
-                            <constraint firstItem="K4r-FA-sSB" firstAttribute="leading" secondItem="Tq8-1M-fNI" secondAttribute="leading" constant="16" id="dKG-d0-V9z"/>
+                            <constraint firstItem="Tq8-1M-fNI" firstAttribute="trailing" secondItem="sdi-23-obe" secondAttribute="trailing" constant="20" id="MgM-jA-Q9p"/>
+                            <constraint firstItem="4e3-gs-rBg" firstAttribute="top" secondItem="Tq8-1M-fNI" secondAttribute="top" constant="20" id="QOP-4C-oJL"/>
+                            <constraint firstItem="sdi-23-obe" firstAttribute="leading" secondItem="Tq8-1M-fNI" secondAttribute="leading" constant="20" id="Xoj-dC-nsW"/>
+                            <constraint firstItem="Tq8-1M-fNI" firstAttribute="bottom" secondItem="sdi-23-obe" secondAttribute="bottom" constant="20" id="YHL-sE-gBd"/>
+                            <constraint firstItem="Tq8-1M-fNI" firstAttribute="trailing" secondItem="Dyh-gv-VO3" secondAttribute="trailing" constant="20" id="ZMh-dX-Vim"/>
+                            <constraint firstItem="4e3-gs-rBg" firstAttribute="centerX" secondItem="xWW-jt-fmV" secondAttribute="centerX" id="bmY-Ot-Gxh"/>
+                            <constraint firstItem="Dyh-gv-VO3" firstAttribute="top" secondItem="4e3-gs-rBg" secondAttribute="bottom" constant="20" id="ll5-CV-IQ2"/>
+                            <constraint firstItem="Dyh-gv-VO3" firstAttribute="leading" secondItem="Tq8-1M-fNI" secondAttribute="leading" constant="20" id="qeb-cW-tEp"/>
+                            <constraint firstItem="sdi-23-obe" firstAttribute="top" secondItem="Dyh-gv-VO3" secondAttribute="bottom" constant="20" id="xPd-rT-GbK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Tq8-1M-fNI"/>
                     </view>
-                    <connections>
-                        <outlet property="descriptionOut" destination="ZMj-1w-SDQ" id="T0l-em-hS6"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bBK-vm-3un" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2126" y="431"/>
+            <point key="canvasLocation" x="2125.5999999999999" y="430.43478260869568"/>
         </scene>
         <!--Favoritos-->
         <scene sceneID="0os-FS-8yl">
@@ -548,7 +588,6 @@ Idade: 34  Sobre você:  </string>
         </scene>
     </scenes>
     <resources>
-        <image name="PratoVerde" width="600" height="518"/>
         <image name="favorites" width="33.75" height="33.75"/>
         <image name="home" width="33.75" height="33.75"/>
         <image name="lisa" width="540" height="405"/>
@@ -556,7 +595,7 @@ Idade: 34  Sobre você:  </string>
         <image name="profile" width="33.75" height="33.75"/>
         <image name="salad" width="96" height="96"/>
         <image name="simpsons_couch" width="630" height="420"/>
-        <image name="star" width="43.065422058105469" height="43.065422058105469"/>
+        <image name="star" width="96" height="96"/>
         <image name="tshirt" width="96" height="96"/>
     </resources>
 </document>

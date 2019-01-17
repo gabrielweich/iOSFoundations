@@ -67,6 +67,8 @@ extension ListViewController: UITableViewDataSource, UITableViewDelegate{
        
         cell.commonInit(businessList[indexPath.row].image
             , title: businessList[indexPath.row].title, sub: businessList[indexPath.row].description)
+        
+        cell.me = businessList[indexPath.row]
         return cell
     }
     
