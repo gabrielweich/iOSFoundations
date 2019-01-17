@@ -19,23 +19,23 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onAcessorios(_ sender: Any) {
-        category = Category(key: "acessories", value: "Objects")
+        category = Category(key: "acessories", value: "Objetos")
         performSegue(withIdentifier: "golist", sender: self)
     }
     
     
     @IBAction func onVestuario(_ sender: Any) {
-        category = Category(key: "wearing", value: "Clothes")
+        category = Category(key: "wearing", value: "Vestuário")
         performSegue(withIdentifier: "golist", sender: self)
     }
     
     @IBAction func onAlimentacao(_ sender: Any) {
-        category = Category(key: "food", value: "Food")
+        category = Category(key: "food", value: "Comidas")
         performSegue(withIdentifier: "golist", sender: self)
     }
     
     @IBAction func onDestaques(_ sender: Any) {
-        category = Category(key: "highlights", value: "Highlights")
+        category = Category(key: "highlights", value: "Mais vistos")
         performSegue(withIdentifier: "golist", sender: self)
         
     }
