@@ -10,6 +10,10 @@ import UIKit
 
 class FavoritesViewController: UIViewController {
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 86
+    }
+    
     @IBOutlet weak var tableView: UITableView!
     
     var favorited:[BusinessItem] = []
@@ -20,6 +24,12 @@ class FavoritesViewController: UIViewController {
         tableView.delegate = self
         
         favorited = BusinessList.getFavorited()
+        print(favorited)
+        
+        let nibName = UINib(nibName: "TableViewCell", bundle: nil)
+        tableView.register(nibName, forCellReuseIdentifier: "TableViewCell")
+        tableView.tableFooterView = UIView()
+
         // Do any additional setup after loading the view.
     }
     
@@ -40,6 +50,7 @@ class FavoritesViewController: UIViewController {
 extension FavoritesViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(favorited.count)
         return favorited.count
         
     }
@@ -47,7 +58,12 @@ extension FavoritesViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell:TableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! TableViewCell
+        print(favorited[indexPath.row])
+        cell.commonInit(favorited[indexPath.row].image
+            , title: favorited[indexPath.row].title, sub: favorited[indexPath.row].description)
         
+        cell.me = favorited[indexPath.row]
+        cell.fav = true
         return cell
     }
     

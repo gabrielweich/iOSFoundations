@@ -69,6 +69,7 @@ extension ListViewController: UITableViewDataSource, UITableViewDelegate{
             , title: businessList[indexPath.row].title, sub: businessList[indexPath.row].description)
         
         cell.me = businessList[indexPath.row]
+        
         return cell
     }
     

@@ -12,12 +12,12 @@ class DetailViewController: UIViewController {
     var businessItem:BusinessItem?
 
     
-    @IBOutlet weak var descriptionOut: UITextView!
+    @IBOutlet weak var imageOutl: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if let bi = businessItem {
-            descriptionOut.text = bi.description
+            imageOutl.image = UIImage(named: bi.image)
         }
         // Do any additional setup after loading the view.
     }
