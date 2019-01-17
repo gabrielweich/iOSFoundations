@@ -33,6 +33,7 @@ class ListViewController: UIViewController{
         businessList = BusinessList.getList(category: category.key) ?? []
         let nibName = UINib(nibName: "TableViewCell", bundle: nil)
         tableView.register(nibName, forCellReuseIdentifier: "TableViewCell")
+        tableView.tableFooterView = UIView()
         // Do any additional setup after loading the view.
 
         businessList = BusinessList.getList(category: category.key) ?? []
