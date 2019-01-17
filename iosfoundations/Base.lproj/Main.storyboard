@@ -392,14 +392,14 @@
                                 <rect key="frame" x="16" y="134" width="343" height="444"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PratoVerde" translatesAutoresizingMaskIntoConstraints="NO" id="hZW-b0-9LR">
-                                        <rect key="frame" x="85.5" y="0.0" width="172" height="128"/>
+                                        <rect key="frame" x="121.5" y="0.0" width="100" height="100"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="128" id="I1T-Rx-yNo"/>
-                                            <constraint firstAttribute="width" constant="172" id="P6e-RC-QI6"/>
+                                            <constraint firstAttribute="width" constant="100" id="OMh-lb-uTJ"/>
+                                            <constraint firstAttribute="height" constant="100" id="piw-u3-JtT"/>
                                         </constraints>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZMj-1w-SDQ">
-                                        <rect key="frame" x="0.0" y="158" width="343" height="128"/>
+                                        <rect key="frame" x="0.0" y="130" width="343" height="184"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Endereço: Rua Santa Teresinha, 42 - Bom Fim, Porto Alegre - RS, 90040-180   Telefone: (51) 3388-6659
 
@@ -409,7 +409,7 @@ Site: www.pratoverde.com.br</string>
                                         <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                                     </textView>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TDK-9K-rTf">
-                                        <rect key="frame" x="52" y="316" width="239" height="128"/>
+                                        <rect key="frame" x="52" y="344" width="239" height="100"/>
                                         <color key="backgroundColor" red="0.53270182219999995" green="0.69851732850000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </mapView>
                                 </subviews>
@@ -437,11 +437,11 @@ Site: www.pratoverde.com.br</string>
             </objects>
             <point key="canvasLocation" x="2126" y="431"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Favoritos-->
         <scene sceneID="0os-FS-8yl">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nYl-df-crG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" image="favorites" id="vQK-8a-BEm"/>
+                    <tabBarItem key="tabBarItem" title="Favoritos" image="favorites" id="vQK-8a-BEm"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="p8C-jH-uKp">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -498,11 +498,11 @@ Site: www.pratoverde.com.br</string>
             </objects>
             <point key="canvasLocation" x="1140" y="1346.176911544228"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Perfil-->
         <scene sceneID="aye-Tz-FId">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j98-8y-J0l" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="profile" id="HFE-em-8MA"/>
+                    <tabBarItem key="tabBarItem" title="Perfil" image="profile" id="HFE-em-8MA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="izQ-8c-P5L">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -517,11 +517,11 @@ Site: www.pratoverde.com.br</string>
             </objects>
             <point key="canvasLocation" x="201" y="1347"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Home-->
         <scene sceneID="TyZ-8K-cWy">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P1K-jP-Hf9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="home" id="6nV-c0-9zN"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="6nV-c0-9zN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jfi-Zn-evq">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
