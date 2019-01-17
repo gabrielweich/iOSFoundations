@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
     var category:Category = Category(key:"", value:"")
 
     override func viewDidLoad() {
