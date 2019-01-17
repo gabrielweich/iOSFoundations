@@ -11,6 +11,8 @@ import UIKit
 class ListViewController: UIViewController {
     
     var category:Category=Category(key:"", value:"")
+    var selectedIndex:Int?
+    
     var businessList:[String:[BusinessItem]] = [
         "acessories":[BusinessItem(title: "agesiel", description:"dessad", favorited:false)],
         "food":[BusinessItem(title: "fgesiel", description:"dessad", favorited:false)],
@@ -56,6 +58,22 @@ extension ListViewController: UITableViewDataSource, UITableViewDelegate{
         
         cell.title?.text=businessList[category.key]?[indexPath.row].title
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let cell = tableView.cellForRow(at: indexPath) {
+            selectedIndex = indexPath.row
+            performSegue(withIdentifier: "godetail", sender: self)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "godetail"{
+            var vc = segue.destination as! DetailViewController
+    
+            vc.businessItem = businessList[category.key]?[selectedIndex!]
+            //Data has to be a variable name in your RandomViewController
+        }
     }
     
 
