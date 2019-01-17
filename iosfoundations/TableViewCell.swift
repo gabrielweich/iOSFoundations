@@ -24,7 +24,8 @@ class TableViewCell: UITableViewCell {
     var fav: Bool = false
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        logoimage.layer.cornerRadius = logoimage.layer.frame.size.height / 2
+        logoimage.layer.masksToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

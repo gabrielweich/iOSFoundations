@@ -29,7 +29,7 @@ class ListViewController: UIViewController{
         titleOut.title = category.value
         tableView.dataSource = self
         tableView.delegate = self
-
+        
         businessList = BusinessList.getList(category: category.key) ?? []
         let nibName = UINib(nibName: "TableViewCell", bundle: nil)
         tableView.register(nibName, forCellReuseIdentifier: "TableViewCell")
@@ -74,6 +74,7 @@ extension ListViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         if let cell = tableView.cellForRow(at: indexPath) {
             selectedIndex = indexPath.row
             performSegue(withIdentifier: "godetail", sender: self)
