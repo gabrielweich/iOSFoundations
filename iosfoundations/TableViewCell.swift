@@ -21,6 +21,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var favoriteImage: UIImageView!
     
     var me:BusinessItem?
+    var fav: Bool = false
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -35,6 +36,12 @@ class TableViewCell: UITableViewCell {
         logoimage.image = UIImage(named: imageName)
         titleLabel.text = title;
         subLabel.text = sub
+        
+        if fav{
+            favoriteImage.image = UIImage(named: "favorites_selected")
+        }
+        
+        
     }
 
     @IBAction func onFavorite(_ sender: Any) {
