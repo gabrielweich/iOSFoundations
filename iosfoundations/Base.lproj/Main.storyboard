@@ -425,6 +425,16 @@ Site: www.pratoverde.com.br</string>
                                     <constraint firstAttribute="height" constant="150" id="q1r-Um-2Bg"/>
                                 </constraints>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4kB-MB-bP2">
+                                <rect key="frame" x="16" y="281" width="276" height="321"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Nome: Gesiel Souza Oliveira
+
+Idade: 34  Sobre você:  </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -468,7 +478,6 @@ Site: www.pratoverde.com.br</string>
         <!--Navigation Controller-->
         <scene sceneID="TyZ-8K-cWy">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="h3B-Dn-oas" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P1K-jP-Hf9" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="home" id="6nV-c0-9zN"/>
                     <toolbarItems/>
@@ -481,6 +490,7 @@ Site: www.pratoverde.com.br</string>
                         <segue destination="OKU-Kd-p8F" kind="relationship" relationship="rootViewController" id="Qmx-04-Zkg"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h3B-Dn-oas" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="201" y="-352"/>
         </scene>
