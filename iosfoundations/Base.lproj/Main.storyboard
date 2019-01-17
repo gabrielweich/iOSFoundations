@@ -595,7 +595,7 @@ Idade: 34  Sobre você:  </string>
         <image name="profile" width="33.75" height="33.75"/>
         <image name="salad" width="96" height="96"/>
         <image name="simpsons_couch" width="630" height="420"/>
-        <image name="star" width="43.065422058105469" height="43.065422058105469"/>
+        <image name="star" width="96" height="96"/>
         <image name="tshirt" width="96" height="96"/>
     </resources>
 </document>
