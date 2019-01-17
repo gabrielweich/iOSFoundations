@@ -17,10 +17,11 @@
 		C04BDB5A21EE521A003B244D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C04BDB5821EE521A003B244D /* LaunchScreen.storyboard */; };
 		C04BDB6221EE56A0003B244D /* BusinessItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BDB6121EE56A0003B244D /* BusinessItem.swift */; };
 		C04BDB6421EE5848003B244D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BDB6321EE5848003B244D /* ListViewController.swift */; };
-		C04BDB6621EE5FCF003B244D /* BusinessItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BDB6521EE5FCF003B244D /* BusinessItemTableViewCell.swift */; };
 		C04BDB6A21EF9FF5003B244D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BDB6921EF9FF5003B244D /* Category.swift */; };
 		C04BDB6C21F0DB42003B244D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BDB6B21F0DB42003B244D /* DetailViewController.swift */; };
 		C04BDB7021F0F15D003B244D /* BusinessList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BDB6F21F0F15D003B244D /* BusinessList.swift */; };
+		C04BDB7521F0FA2C003B244D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BDB7421F0FA2C003B244D /* TableViewCell.swift */; };
+		C04BDB7621F0FE38003B244D /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C04BDB7321F0FA2B003B244D /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,10 +37,11 @@
 		C04BDB5B21EE521A003B244D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C04BDB6121EE56A0003B244D /* BusinessItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessItem.swift; sourceTree = "<group>"; };
 		C04BDB6321EE5848003B244D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		C04BDB6521EE5FCF003B244D /* BusinessItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessItemTableViewCell.swift; sourceTree = "<group>"; };
 		C04BDB6921EF9FF5003B244D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		C04BDB6B21F0DB42003B244D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C04BDB6F21F0F15D003B244D /* BusinessList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessList.swift; sourceTree = "<group>"; };
+		C04BDB7321F0FA2B003B244D /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		C04BDB7421F0FA2C003B244D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,10 +74,11 @@
 		C04BDB4E21EE5219003B244D /* iosfoundations */ = {
 			isa = PBXGroup;
 			children = (
+				C04BDB7421F0FA2C003B244D /* TableViewCell.swift */,
+				C04BDB7321F0FA2B003B244D /* TableViewCell.xib */,
 				C04BDB4F21EE5219003B244D /* AppDelegate.swift */,
 				C04BDB6F21F0F15D003B244D /* BusinessList.swift */,
 				C04BDB5121EE5219003B244D /* ViewController.swift */,
-				C04BDB6521EE5FCF003B244D /* BusinessItemTableViewCell.swift */,
 				C04BDB5321EE5219003B244D /* Main.storyboard */,
 				C04BDB6B21F0DB42003B244D /* DetailViewController.swift */,
 				4EB8E45921EFAC1600322C2F /* RoundedView.swift */,
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C04BDB5A21EE521A003B244D /* LaunchScreen.storyboard in Resources */,
+				C04BDB7621F0FE38003B244D /* TableViewCell.xib in Resources */,
 				C04BDB5721EE521A003B244D /* Assets.xcassets in Resources */,
 				C04BDB5521EE5219003B244D /* Main.storyboard in Resources */,
 			);
@@ -166,11 +170,11 @@
 				C04BDB5221EE5219003B244D /* ViewController.swift in Sources */,
 				C04BDB5021EE5219003B244D /* AppDelegate.swift in Sources */,
 				C04BDB6421EE5848003B244D /* ListViewController.swift in Sources */,
-				C04BDB6621EE5FCF003B244D /* BusinessItemTableViewCell.swift in Sources */,
 				BE74195821EE6C49009D0C1C /* FavoritesViewController.swift in Sources */,
 				BE545DFE21EF9E8A000D3F4A /* ProfileViewController.swift in Sources */,
 				C04BDB6221EE56A0003B244D /* BusinessItem.swift in Sources */,
 				4EB8E45A21EFAC1600322C2F /* RoundedView.swift in Sources */,
+				C04BDB7521F0FA2C003B244D /* TableViewCell.swift in Sources */,
 				C04BDB7021F0F15D003B244D /* BusinessList.swift in Sources */,
 				C04BDB6A21EF9FF5003B244D /* Category.swift in Sources */,
 			);

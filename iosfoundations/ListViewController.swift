@@ -8,12 +8,18 @@
 
 import UIKit
 
-class ListViewController: UIViewController {
+class ListViewController: UIViewController{
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 86
+    }
     
     var category:Category=Category(key:"", value:"")
     var selectedIndex:Int?
     
+
     var businessList:[BusinessItem]=[]
+    
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var titleOut: UINavigationItem!
@@ -23,6 +29,12 @@ class ListViewController: UIViewController {
         titleOut.title = category.value
         tableView.dataSource = self
         tableView.delegate = self
+
+        businessList = BusinessList.getList(category: category.key) ?? []
+        let nibName = UINib(nibName: "TableViewCell", bundle: nil)
+        tableView.register(nibName, forCellReuseIdentifier: "TableViewCell")
+        // Do any additional setup after loading the view.
+
         businessList = BusinessList.getList(category: category.key) ?? []
         // Do any additional setup after loading the view.
     }
@@ -50,9 +62,9 @@ extension ListViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:BusinessItemTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as! BusinessItemTableViewCell
-        
-        cell.title?.text=businessList[indexPath.row].title
+        let cell:TableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! TableViewCell
+       
+        cell.commonInit("img_\(indexPath.item)", title: "gesiel", sub: "gabriel")
         return cell
     }
     
@@ -62,7 +74,6 @@ extension ListViewController: UITableViewDataSource, UITableViewDelegate{
             performSegue(withIdentifier: "godetail", sender: self)
         }
     }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "godetail"{
             var vc = segue.destination as! DetailViewController
@@ -73,6 +84,4 @@ extension ListViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
 
-    
-    
 }

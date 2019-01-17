@@ -337,7 +337,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="uh2-zp-0us" customClass="BusinessItemTableViewCell" customModule="iosfoundations" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="uh2-zp-0us" customClass="TableViewCell" customModule="iosfoundations" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uh2-zp-0us" id="I2e-hw-lUr">
@@ -378,7 +378,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="91i-ji-7k4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2126" y="-352"/>
+            <point key="canvasLocation" x="2125.5999999999999" y="-352.17391304347831"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="aFd-mP-Zun">
@@ -477,6 +477,16 @@ Site: www.pratoverde.com.br</string>
                                     <constraint firstAttribute="height" constant="150" id="q1r-Um-2Bg"/>
                                 </constraints>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4kB-MB-bP2">
+                                <rect key="frame" x="16" y="281" width="276" height="321"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Nome: Gesiel Souza Oliveira
+
+Idade: 34  Sobre você:  </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -546,7 +556,7 @@ Site: www.pratoverde.com.br</string>
         <image name="profile" width="33.75" height="33.75"/>
         <image name="salad" width="96" height="96"/>
         <image name="simpsons_couch" width="630" height="420"/>
-        <image name="star" width="96" height="96"/>
+        <image name="star" width="43.065422058105469" height="43.065422058105469"/>
         <image name="tshirt" width="96" height="96"/>
     </resources>
 </document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="iosfoundations" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZvF-61-aAA">
+                        <rect key="frame" x="16" y="11" width="73" height="39"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="73" id="L2v-ck-Bjv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eF8-iP-2vn">
+                        <rect key="frame" x="100" y="8" width="55" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URg-CI-eAT">
+                        <rect key="frame" x="103" y="39" width="152" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="It6-Um-yNk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <color key="textColor" white="0.44613389530000003" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="mTv-F6-0pA">
+                        <rect key="frame" x="265" y="16" width="42" height="37.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="dFc-xw-wVJ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mTv-F6-0pA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="34D-kL-rWT"/>
+                    <constraint firstItem="URg-CI-eAT" firstAttribute="top" secondItem="eF8-iP-2vn" secondAttribute="bottom" constant="3" id="7aj-Bm-OHw"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mTv-F6-0pA" secondAttribute="trailing" constant="-3" id="ARi-uF-Q70"/>
+                    <constraint firstItem="eF8-iP-2vn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="ELR-FY-cI3"/>
+                    <constraint firstItem="ZvF-61-aAA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Hjy-qy-asj"/>
+                    <constraint firstItem="mTv-F6-0pA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="WzW-WC-Wi4"/>
+                    <constraint firstItem="ZvF-61-aAA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="YqP-Xp-y58"/>
+                    <constraint firstItem="eF8-iP-2vn" firstAttribute="leading" secondItem="ZvF-61-aAA" secondAttribute="trailing" constant="11" id="eOR-Fj-IdD"/>
+                    <constraint firstItem="mTv-F6-0pA" firstAttribute="leading" secondItem="URg-CI-eAT" secondAttribute="trailing" constant="10" id="k1l-9N-f8X"/>
+                    <constraint firstItem="URg-CI-eAT" firstAttribute="leading" secondItem="ZvF-61-aAA" secondAttribute="trailing" constant="14" id="nJ3-iQ-sWe"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ZvF-61-aAA" secondAttribute="bottom" constant="9" id="zka-Fb-lfN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="favoritando" destination="mTv-F6-0pA" id="LDF-2w-vTL"/>
+                <outlet property="logoimage" destination="ZvF-61-aAA" id="YU7-QU-Ec5"/>
+                <outlet property="subLabel" destination="URg-CI-eAT" id="fhD-AD-QhM"/>
+                <outlet property="titleLabel" destination="eF8-iP-2vn" id="2rQ-pP-hy7"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="154.72263868065968"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="star" width="43.065422058105469" height="43.065422058105469"/>
+    </resources>
+</document>
