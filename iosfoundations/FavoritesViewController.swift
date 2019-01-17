@@ -10,21 +10,16 @@ import UIKit
 
 class FavoritesViewController: UIViewController {
     
-    var category:Category=Category(key:"", value:"")
-    var businessList:[String:[BusinessItem]] = [
-        "acessories":[BusinessItem(title: "agesiel", description:"dessad", favorited:false)],
-        "food":[BusinessItem(title: "fgesiel", description:"dessad", favorited:false)],
-        "wearing":[BusinessItem(title: "wgesiel", description:"dessad", favorited:false)],
-        "highlights":[BusinessItem(title: "hgesiel", description:"dessad", favorited:false)]
-    ]
-    
     @IBOutlet weak var tableView: UITableView!
+    
+    var favorited:[BusinessItem] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-
+        
+        favorited = BusinessList.getFavorited()
         // Do any additional setup after loading the view.
     }
     
@@ -45,14 +40,15 @@ class FavoritesViewController: UIViewController {
 extension FavoritesViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return businessList[category.key]?.count ?? 0
+        return favorited.count
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell:BusinessItemTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as! BusinessItemTableViewCell
         
-        cell.title?.text=businessList[category.key]?[indexPath.row].title
+        cell.title?.text=favorited[indexPath.row].title
 
         return cell
     }
