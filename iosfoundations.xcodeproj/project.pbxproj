@@ -13,7 +13,6 @@
 		4EB8E45A21EFAC1600322C2F /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB8E45921EFAC1600322C2F /* RoundedView.swift */; };
 		BE545DFE21EF9E8A000D3F4A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE545DFD21EF9E8A000D3F4A /* ProfileViewController.swift */; };
 		BE74195821EE6C49009D0C1C /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE74195721EE6C49009D0C1C /* FavoritesViewController.swift */; };
-		BE74195A21EE6D89009D0C1C /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE74195921EE6D89009D0C1C /* FavoriteTableViewCell.swift */; };
 		C04BDB5021EE5219003B244D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BDB4F21EE5219003B244D /* AppDelegate.swift */; };
 		C04BDB5221EE5219003B244D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BDB5121EE5219003B244D /* ViewController.swift */; };
 		C04BDB5521EE5219003B244D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C04BDB5321EE5219003B244D /* Main.storyboard */; };
@@ -22,6 +21,7 @@
 		C04BDB6421EE5848003B244D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BDB6321EE5848003B244D /* ListViewController.swift */; };
 		C04BDB6621EE5FCF003B244D /* BusinessItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BDB6521EE5FCF003B244D /* BusinessItemTableViewCell.swift */; };
 		C04BDB6A21EF9FF5003B244D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BDB6921EF9FF5003B244D /* Category.swift */; };
+		C04BDB6C21F0DB42003B244D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BDB6B21F0DB42003B244D /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,6 @@
 		4EB8E45921EFAC1600322C2F /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		BE545DFD21EF9E8A000D3F4A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		BE74195721EE6C49009D0C1C /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
-		BE74195921EE6D89009D0C1C /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		C04BDB4C21EE5219003B244D /* iosfoundations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosfoundations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C04BDB4F21EE5219003B244D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C04BDB5121EE5219003B244D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +41,7 @@
 		C04BDB6321EE5848003B244D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		C04BDB6521EE5FCF003B244D /* BusinessItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessItemTableViewCell.swift; sourceTree = "<group>"; };
 		C04BDB6921EF9FF5003B244D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		C04BDB6B21F0DB42003B244D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,10 +88,10 @@
 				C04BDB5121EE5219003B244D /* ViewController.swift */,
 				C04BDB6521EE5FCF003B244D /* BusinessItemTableViewCell.swift */,
 				C04BDB5321EE5219003B244D /* Main.storyboard */,
+				C04BDB6B21F0DB42003B244D /* DetailViewController.swift */,
 				4EB8E45921EFAC1600322C2F /* RoundedView.swift */,
 				BE545DFD21EF9E8A000D3F4A /* ProfileViewController.swift */,
 				C04BDB6321EE5848003B244D /* ListViewController.swift */,
-				BE74195921EE6D89009D0C1C /* FavoriteTableViewCell.swift */,
 				BE74195721EE6C49009D0C1C /* FavoritesViewController.swift */,
 				C04BDB5821EE521A003B244D /* LaunchScreen.storyboard */,
 				C04BDB5B21EE521A003B244D /* Info.plist */,
@@ -174,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C04BDB6C21F0DB42003B244D /* DetailViewController.swift in Sources */,
 				C04BDB5221EE5219003B244D /* ViewController.swift in Sources */,
 				C04BDB5021EE5219003B244D /* AppDelegate.swift in Sources */,
 				C04BDB6421EE5848003B244D /* ListViewController.swift in Sources */,

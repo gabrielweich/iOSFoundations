@@ -24,9 +24,9 @@ class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         cell.commonInit("img_\(indexPath.item)", title: titulo[indexPath.item], sub: word[indexPath.item])
         return cell
     }
-    
-    
     var category:Category=Category(key:"", value:"")
+    var selectedIndex:Int?
+    
     var businessList:[String:[BusinessItem]] = [
         "acessories":[BusinessItem(title: "agesiel", description:"dessad", favorited:false)],
         "wearing":[BusinessItem(title: "wgesiel", description:"dessad", favorited:false)],
@@ -48,6 +48,20 @@ class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         let nibName = UINib(nibName: "TableViewCell", bundle: nil)
         tableView.register(nibName, forCellReuseIdentifier: "TableViewCell")
         // Do any additional setup after loading the view.
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let cell = tableView.cellForRow(at: indexPath) {
+            selectedIndex = indexPath.row
+            performSegue(withIdentifier: "godetail", sender: self)
+        }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "godetail"{
+            var vc = segue.destination as! DetailViewController
+            vc.businessItem = businessList[category.key]?[selectedIndex!]
+            //Data has to be a variable name in your RandomViewController
+        }
     }
     
 
