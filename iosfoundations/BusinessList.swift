@@ -14,10 +14,10 @@ class BusinessList{
             BusinessItem(title: "agesiel", description:"dessad", favorited: false, image: "img_0")
         ],
         "food":[
-            BusinessItem(title: "fgesiel", description:"dessad", favorited: true, image: "img_1")
+            BusinessItem(title: "fgesiel", description:"dessad", favorited: false, image: "img_1")
         ],
         "wearing":[
-            BusinessItem(title: "wgesiel", description:"dessad", favorited: true, image: "img_2")
+            BusinessItem(title: "wgesiel", description:"dessad", favorited: false, image: "img_2")
         ],
         "highlights":[
             BusinessItem(title: "hgesiel", description:"dessad", favorited: false, image: "img_3")
