@@ -13,12 +13,7 @@ class ListViewController: UIViewController {
     var category:Category=Category(key:"", value:"")
     var selectedIndex:Int?
     
-    var businessList:[String:[BusinessItem]] = [
-        "acessories":[BusinessItem(title: "agesiel", description:"dessad", favorited:false)],
-        "food":[BusinessItem(title: "fgesiel", description:"dessad", favorited:false)],
-        "wearing":[BusinessItem(title: "wgesiel", description:"dessad", favorited:false)],
-        "highlights":[BusinessItem(title: "hgesiel", description:"dessad", favorited:false)]
-    ]
+    var businessList:[BusinessItem]=[]
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var titleOut: UINavigationItem!
@@ -28,6 +23,7 @@ class ListViewController: UIViewController {
         titleOut.title = category.value
         tableView.dataSource = self
         tableView.delegate = self
+        businessList = BusinessList.getList(category: category.key) ?? []
         // Do any additional setup after loading the view.
     }
     
@@ -50,13 +46,13 @@ class ListViewController: UIViewController {
 
 extension ListViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return businessList[category.key]?.count ?? 0
+        return businessList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:BusinessItemTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as! BusinessItemTableViewCell
         
-        cell.title?.text=businessList[category.key]?[indexPath.row].title
+        cell.title?.text=businessList[indexPath.row].title
         return cell
     }
     
@@ -71,7 +67,7 @@ extension ListViewController: UITableViewDataSource, UITableViewDelegate{
         if segue.identifier == "godetail"{
             var vc = segue.destination as! DetailViewController
     
-            vc.businessItem = businessList[category.key]?[selectedIndex!]
+            vc.businessItem = businessList[selectedIndex!]
             //Data has to be a variable name in your RandomViewController
         }
     }
