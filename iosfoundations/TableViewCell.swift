@@ -20,6 +20,7 @@ class TableViewCell: UITableViewCell {
     
     @IBOutlet weak var favoriteImage: UIImageView!
     
+    var me:BusinessItem?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -37,6 +38,14 @@ class TableViewCell: UITableViewCell {
     }
 
     @IBAction func onFavorite(_ sender: Any) {
-        favoriteImage.image = UIImage(named: "favorites_selected")
+        if var eu = me{
+            if eu.favorited{
+                me!.favorited = false
+                favoriteImage.image = UIImage(named: "favorites")
+            }else{
+                me!.favorited = true
+                favoriteImage.image = UIImage(named: "favorites_selected")
+            }
+        }
     }
 }
